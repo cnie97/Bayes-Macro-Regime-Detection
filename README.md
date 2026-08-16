@@ -1,7 +1,7 @@
 # U.S. Macroeconomic Regime Detection
 
 ## Overview
-We investigate regime changes and latent states in the US economy using Hidden Markov Models.
+We investigate regime changes and latent states in the US economy using Hidden Markov Models. 
 
 ## Data
 ### Data Source:
@@ -391,13 +391,31 @@ For example, VIX values of 35 and 80 might both be classified as **High** in the
 What did you find?
 
 ## Comparison of Approaches
-[[__]]  [[Cathy to fill]]
+[[]] - Cathy to fill, waiting for final results?
 
 ## Repository Structure
-What are the important files?  [[Cathy to fill]]
+What are the important files?  
+1. Create_Dataset_v2.ipynb - cleans data and creates dataset for analysis
+2. Continuous_HMM_Regime_Model_v3.ipynb - runs continuous-emission HMM
+3. Discrete Emissions.ipynb - runs discrete-emission HMM
+4. master_monthly_dataset.csv - data source
+5. gdp_quarterly_growth.csv - data source
+6. USREC.csv - data source
+
 
 ## Installation / Requirements
-What packages are required?  [[Cathy to fill]]
+What packages are required? 
+1. pandas
+2. numbpy
+3. matplotlib
+4. scikit-learn
+5. scipy
+6. hmmlearn
+7. requests
 
 ## Running the Analysis
-What should someone run and in what order?  [[Cathy to fill]]
+What should someone run and in what order? 
+1. Run Create_Dataset_v2.ipynb to create the cleaned datasets
+2. Run Discrete Emissions.ipynb to run the discrete-emission HMM
+3. Run Continuous_HMM_Regime_Model_v3.ipynb to run the continuous-emission HMM
+4. Compare the inferred regimes with recession periods, each other, GDP, and other indicators as needed
